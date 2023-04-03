@@ -5,5 +5,8 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    projectId: "sdetpro",
+    // specPattern: "./cypressautomation\cypress\e2e\linh/**.*",
+    baseUrl: "https://the-internet.herokuapp.com",
   },
 });

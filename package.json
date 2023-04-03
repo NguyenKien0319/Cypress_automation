@@ -1,22 +1,21 @@
 {
-  "name": "intern",
+  "name": "cypressautomation",
   "version": "1.0.0",
   "description": "",
-  "main": "new.cy.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/NguyenKien0319/Cypress_automation.git"
-  },
-  "author": "",
+  "author": "ASUS",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/NguyenKien0319/Cypress_automation/issues"
-  },
-  "homepage": "https://github.com/NguyenKien0319/Cypress_automation#readme",
   "devDependencies": {
-    "cypress": "^12.9.0"
+    "@4tw/cypress-drag-drop": "^2.2.3",
+    "@cypress/xpath": "^2.0.3",
+    "@testing-library/cypress": "^9.0.0",
+    "cypress": "^12.8.1",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
+    "cypress-xpath": "^2.0.1",
+    "mocha": "^10.2.0"
   }
 }

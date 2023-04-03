@@ -1,0 +1,17 @@
+[
+  {
+    "email": "camlinh15172@gmail.com",
+    "password": "12345678",
+    "expected": "Dashboard"
+  },
+  {
+    "email": "abc",
+    "password": "12345678",
+    "expected": "Dashboard"
+  },
+  {
+    "email": "camlinh15172@gmail.com",
+    "password": "xyz",
+    "expected": "Dashboard"
+  }
+]
