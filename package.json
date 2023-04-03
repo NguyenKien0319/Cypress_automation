@@ -1,0 +1,22 @@
+{
+  "name": "intern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "new.cy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NguyenKien0319/Cypress_automation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NguyenKien0319/Cypress_automation/issues"
+  },
+  "homepage": "https://github.com/NguyenKien0319/Cypress_automation#readme",
+  "devDependencies": {
+    "cypress": "^12.9.0"
+  }
+}
