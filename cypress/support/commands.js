@@ -28,9 +28,29 @@
 
 / <reference types = "Cypressiframe"/ >
   Cypress.Commands.add("getIframe", (iframe) => {
-    return cy
-      .get(iframe)
-      .its("0.contentDocument.body")
-      .should("be.visible")
-      .then(cy.wrap);
+    return cy.get(iframe).its("0.contentDocument.body").should("be.visible").then(cy.wrap);
   });
+
+//custom command for clicking on link using label
+Cypress.Commands.add("clickLink", (label) => {
+  cy.get("a").contains(label).click();
+});
+
+//Over write contains()
+/*Cypress.Commands.overwrite("contains", (originalFn, subject, filter, text, options = {}) => {
+  //determine if filter argumment was passed
+  if (typeof text === "object") {
+    options = text;
+    text = filter;
+    filter = undefined;
+  }
+  options.mathCase = false;
+  return originalFn(subject, filter, text, options);
+});
+*/
+//Custom comamnd for login
+Cypress.Commands.add("loginapp", (email, password) => {
+  cy.get("#Email").type(email);
+  cy.get("#Password").type(password);
+  cy.get("button[class='button-1 login-button']").click();
+});
