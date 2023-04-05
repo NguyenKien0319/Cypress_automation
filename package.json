@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/NguyenKien0319/Cypress_automation#readme",
   "devDependencies": {
-    "cypress": "^12.9.0"
+    "@cucumber/cucumber": "^9.1.0",
+    "cypress": "^12.9.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-xpath": "^2.0.1",
+    "mocha": "^10.2.0"
   }
 }
