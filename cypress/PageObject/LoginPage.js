@@ -1,19 +1,19 @@
 class Login {
-  txtEamil = "#email";
-  txtPassword = "#password";
-  btnSubmit = "button[type='submit']";
-  lblmsg = "#polls-title";
+  input_Eamil = "#email";
+  input_Password = "#password";
+  button_Login = "button[type='submit']";
+  expected_Title = "#polls-title";
   setEmail(email) {
-    cy.get(this.txtEamil).type(email);
+    cy.get(this.input_Eamil).type(email);
   }
   setPassword(password) {
-    cy.get(this.txtPassword).type(password);
+    cy.get(this.input_Password).type(password);
   }
   clickSubmit() {
-    cy.get(this.btnSubmit).click();
+    cy.get(this.button_Login).click();
   }
   verifyLogin(expected) {
-    cy.get(this.lblmsg).should("contain", expected);
+    cy.get(this.expected_Title).should("contain", expected);
   }
 }
 export default Login;
