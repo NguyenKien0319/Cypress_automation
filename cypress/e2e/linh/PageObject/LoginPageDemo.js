@@ -1,7 +1,7 @@
-class Login {
+export class Login {
   input_Emaill = "#username";
   input_Password = "#password";
-  button_Login = "input[value='Login']";
+  button_Login = "input[name='login']";
   error_msg = ".woocommerce-error";
   enterEmail(email) {
     cy.get(this.input_Emaill).type(email);
@@ -12,11 +12,10 @@ class Login {
   clickButtonLogin() {
     cy.get(this.button_Login).click();
   }
-  verifyLoginSuccessfully(expected) {
-    cy.title().should("eq", expected);
+  verifyLoginSuccessfully() {
+    cy.title().should("eq", "My Account – Automation Practice Site");
   }
   verifyErrorMsg() {
     cy.get(this.error_msg).should("be.visible");
   }
 }
-export default Login;
