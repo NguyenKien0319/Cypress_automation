@@ -24,6 +24,7 @@
     "@badeball/cypress-cucumber-preprocessor": "latest",
     "@bahmutov/cypress-esbuild-preprocessor": "latest",
     "@cypress/xpath": "^2.0.3",
-    "cypress": "latest"
+    "cypress": "latest",
+    "faker": "^5.5.3"
   }
 }
