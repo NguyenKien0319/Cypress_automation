@@ -23,4 +23,5 @@ module.exports = defineConfig({
     specPattern: "**/*.feature",
     setupNodeEvents,
   },
+  chromeWebSecurity: false,
 });
