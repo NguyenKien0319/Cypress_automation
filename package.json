@@ -2,7 +2,6 @@
   "name": "intern",
   "version": "1.0.0",
   "description": "",
-  "main": "new.cy.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,11 +15,11 @@
     "url": "https://github.com/NguyenKien0319/Cypress_automation/issues"
   },
   "homepage": "https://github.com/NguyenKien0319/Cypress_automation#readme",
-  "devDependencies": {
-    "@cucumber/cucumber": "^9.1.0",
-    "cypress": "^12.9.0",
-    "cypress-file-upload": "^5.0.8",
-    "cypress-xpath": "^2.0.1",
-    "mocha": "^10.2.0"
+  "dependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.3",
+    "@badeball/cypress-cucumber-preprocessor": "latest",
+    "@bahmutov/cypress-esbuild-preprocessor": "latest",
+    "cypress": "latest",
+    "@cypress/xpath": "^2.0.3"
   }
 }

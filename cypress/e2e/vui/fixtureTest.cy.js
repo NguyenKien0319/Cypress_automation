@@ -1,6 +1,3 @@
-//import { get } from "cypress/types/lodash"
-
-
 describe('Create a poll',  () => {
   beforeEach('Create a new poll with fixture', () => {
     cy.visit('https://strawpoll.com/create/')
