@@ -20,13 +20,13 @@ export class CreatePoll {
   enterTitle(title) {
     cy.get(this.input_Title).type(title);
   }
-  selectMutipleChoice() {
+  selectVotingType(votingtype) {
     cy.get("#voting-type").click();
-    cy.get("ul[role='listbox']").contains("Multiple choice").click();
+    cy.get("ul[role='listbox']").contains(votingtype).click();
   }
-  selectMutipleChoice() {
-    cy.get("#voting-type").click();
-    cy.get("ul[role='listbox']").contains("Multiple choice").click();
+  selectDay(day1, day2) {
+    cy.get(".grid.grid-cols-7 button").contains(day1).click();
+    cy.get(".grid.grid-cols-7 button").contains(day2).click();
   }
   fillOptions(option1, option2) {
     cy.get(this.input_option1).type(option1);
